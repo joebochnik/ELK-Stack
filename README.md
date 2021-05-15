@@ -106,13 +106,13 @@ SSH into the control node and follow the steps below:
 - Update the ansible.cfg file by changing remote_user=[username used for all machines]
 - Update the hosts file in /etc/ansible to include :
 
-[webservers]  	
-10.0.0.5 ansible_python_interpreter=/usr/bin/python3
-10.0.0.6 ansible_python_interpreter=/usr/bin/python3
-10.0.0.7 ansible_python_interpreter=/usr/bin/python3
+       [webservers]  	
+       10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+       10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+       10.0.0.7 ansible_python_interpreter=/usr/bin/python3
     
-[elk]
-10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+       [elk]
+       10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbooks, and navigate to http://[Load-balancer-IP]/setup.php to check that the installation worked as expected.
 
