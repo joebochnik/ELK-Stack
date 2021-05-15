@@ -105,6 +105,7 @@ SSH into the control node and follow the steps below:
 - Copy the .yml files to /etc/ansible 
 - Update the ansible.cfg file by changing remote_user=[username used for all machines]
 - Update the hosts file in /etc/ansible to include :
+
 	[webservers]
 	10.0.0.5 ansible_python_interpreter=/usr/bin/python3
         10.0.0.6 ansible_python_interpreter=/usr/bin/python3
